@@ -1,0 +1,35 @@
+{
+  "name": "apsara-report-management",
+  "version": "1.0.0",
+  "description": "Full-stack management report application for computers and printers",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "client": "cd client && python -m http.server 3000",
+    "install-deps": "npm install",
+    "setup": "npm install && echo Please configure .env file with MongoDB connection string",
+    "bootstrap:images": "node scripts/bootstrap-image-cluster.js",
+    "bootstrap:roles": "node scripts/bootstrap-role-cluster.js"
+  },
+  "keywords": [
+    "management",
+    "report",
+    "computer",
+    "printer",
+    "google-drive"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
